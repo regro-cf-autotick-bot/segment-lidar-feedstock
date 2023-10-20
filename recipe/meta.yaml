@@ -1,5 +1,5 @@
 {% set name = "segment-lidar" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/segment-lidar-{{ version }}.tar.gz
-  sha256: a5a60c2823c7c24d510ceccce93f365cb2585e9e75caefb1c59c5cbebdaff293
+  sha256: 2023ba5480974aceac5972a3d5dc2ebcdaf6b11894bedc45879b91d98cd1ba83
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 0
   skip: true
 
 requirements:
